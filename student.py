@@ -1,7 +1,10 @@
-class Student:
+from person import Person
 
-    def __init__(self,s,f,l,e):
-        self.student_id = s
-        self.first_name = f
-        self.last_name = l
-        self.enroll_data = e
+
+class Student(Person):
+
+    def __init__(self, sid, fn, ln, ed):
+
+        super(Student, self).__init__(fn, ln)
+        self.student_id = sid
+        self.enroll_date = ed
