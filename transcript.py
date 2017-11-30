@@ -17,14 +17,14 @@ class Transcript:
         print(s[1])
         print(format("Class", '15'), format("Credit Hours", '15'), format("Credit Points", '15'),
               format("Grade Points", '15'), format("Grade", '15'))
-        for key in self.enrollment_dictionary:
+        for key in self.enrollment_dictionary.data:
             k = str(key)
             l = list(k)
             confirm = int(l[0])
 
             if confirm == compare:
 
-                e = self.enrollment_dictionary[key]
+                e = self.enrollment_dictionary.data[key]
 
 
                 # (enroll_id, self.students[1], self.courses[1050], 4, 'A')
